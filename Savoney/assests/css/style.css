@@ -1,0 +1,182 @@
+:root{
+    --primary:#fff;
+    --light:#0ea5e9;
+    --dark:#313154;
+    --grey: #e0f2fe;
+    --danger:#ff5b57;
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+}
+input:not([type="radio"]):not([type="checkbox"]), button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+body{
+    background: var(--primary);
+}
+
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+h3{
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+h4{
+    color: var(--dark);
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.greetings .title{
+    /* display: flex; */
+    text-align: center;
+}
+
+.greetings .title input,
+.greetings .title span{
+    margin-left: 0.5rem;
+    /* flex: 1 1 0%; */
+    min-width: 0;
+}
+.greetings .title,
+.greetings .title input{
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 700;    
+}
+
+.moneySave{
+    margin-top: 5rem;
+    height: 90vh;
+}
+.moneySave .container-2x{
+    display: grid;
+    grid-template-columns: repeat(2,3fr);
+    grid-gap: 1rem;
+    height: 60vh;
+}
+.moneySave .container-2x .picture img{ 
+    width: 80%;
+    display: block;
+    margin: 3rem auto;
+}
+.moneySave .data,
+.moneySave .picture{
+    border-radius: 1rem;
+    background-color: var(--grey);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+}
+.moneySave .data .totalMarkers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+.moneySave .data .totalMarkers h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.moneySave .data .totalMarkers h3 div{
+    margin-top: 1rem;
+}
+
+.moneySave .data .addValues{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.moneySave .data .addValues #Income h3,
+.moneySave .data .addValues #expense h3{
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom:1rem ;
+
+}
+.moneySave .data .addValues #Income input:not([type="submit"]):not([type="radio"]),
+.moneySave .data .addValues #expense input:not([type="submit"]):not([type="radio"]){
+    display: block;
+    width: 90%;
+    font-size: 0.800rem;
+    padding: 1rem 1.5rem;
+    color: var(--dark);
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+    margin-right:1rem ;
+}
+
+.moneySave .data .addValues #expense select{
+    width: 50%;
+    font-size: 0.800rem;
+    padding: 0.5rem 0.5rem;
+    color: var(--dark);
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-right:1rem ;
+    text-align: center;
+}
+
+.moneySave .data .addValues #expense select option{
+    justify-content: center;
+}
+.moneySave .data .addValues #Income .option-income{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.moneySave .data .addValues #Income .option-income label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 40%;
+    gap: 0.150rem;
+
+    /* margin-top:0.5rem ; */
+    /* margin-left: 0.5rem; */
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.moneySave .data .addValues #Income .addIncome,
+.moneySave .data .addValues #expense .addExpense{
+
+    display: block;
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    color: var(--primary);
+    background-color: var(--light);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-top: 1.5rem;
+    margin-right:1rem ;
+
+}
+
